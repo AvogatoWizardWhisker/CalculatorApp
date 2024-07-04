@@ -19,19 +19,19 @@ namespace CalculatorLibrary
             // Use a switch statement to do the math.
             switch (op)
             {
-                case "a":
+                case "+":
                     result = num1 + num2;
                     Trace.WriteLine(String.Format("{0} + {1} = {2}", num1, num2, result));
                     break;
-                case "s":
+                case "-":
                     result = num1 - num2;
                     Trace.WriteLine(String.Format("{0} - {1} = {2}", num1, num2, result));
                     break;
-                case "m":
+                case "*":
                     result = num1 * num2;
                     Trace.WriteLine(String.Format("{0} * {1} = {2}", num1, num2, result));
                     break;
-                case "d":
+                case "/":
                     // Ask the user to enter a non-zero divisor.
                     if (num2 != 0)
                     {

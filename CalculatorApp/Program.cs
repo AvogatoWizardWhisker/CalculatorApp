@@ -50,16 +50,16 @@ namespace CalculatorApp
 
                 // Ask the user to to choose an operator
                 Console.WriteLine("Choose an operator from the following list: ");
-                Console.WriteLine("\ta - Add");
-                Console.WriteLine("\ts - Subtract");
-                Console.WriteLine("\tm - Multiply");
-                Console.WriteLine("\td - Divide");
+                Console.WriteLine("\t+ - Add");
+                Console.WriteLine("\t- - Subtract");
+                Console.WriteLine("\t* - Multiply");
+                Console.WriteLine("\t/ - Divide");
                 Console.Write("Your option? ");
 
                 string? op = Console.ReadLine();
 
                 // Validate input is not num, and matches the pattern
-                if (op == null || !Regex.IsMatch(op, "[a|s|m|d]"))
+                if (op == null || !Regex.IsMatch(op, "[+|-|*|/]"))
                 {
                     Console.WriteLine("Error: Unrecognized input");
                 }
