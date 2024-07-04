@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using CalculatorLibrary;
 
 namespace CalculatorApp
 {
@@ -12,9 +13,10 @@ namespace CalculatorApp
         static void Main(string[] args)
         {
             bool endApp = false;
+            Calculator calculator = new Calculator();
             // Display the title as the C# Calculator app
-            Console.WriteLine("Console Calculator app\r");
-            Console.WriteLine("----------------------\n");
+            Console.WriteLine("Console Calculator app in C#\r");
+            Console.WriteLine("----------------------------\n");
 
             while (!endApp)
             {
@@ -40,7 +42,7 @@ namespace CalculatorApp
                 numInput2 = Console.ReadLine();
 
                 double cleanNum2 = 0;
-                while (!double.TryParse(numInput2, out cleanNum2)) ;
+                while (!double.TryParse(numInput2, out cleanNum2))
                 {
                     Console.WriteLine("This is not a valid input. Please Enter a numeric value: ");
                     numInput2 = Console.ReadLine();
@@ -52,11 +54,12 @@ namespace CalculatorApp
                 Console.WriteLine("\ts - Subtract");
                 Console.WriteLine("\tm - Multiply");
                 Console.WriteLine("\td - Divide");
+                Console.Write("Your option? ");
 
                 string? op = Console.ReadLine();
 
                 // Validate input is not num, and matches the pattern
-                if (op == null || Regex.IsMatch(op, "[a|s|m|d]"))
+                if (op == null || !Regex.IsMatch(op, "[a|s|m|d]"))
                 {
                     Console.WriteLine("Error: Unrecognized input");
                 }
@@ -64,7 +67,7 @@ namespace CalculatorApp
                 {
                     try
                     {
-                        result = Calculator.DoOperation(cleanNum1, cleanNum2, op);
+                        result = calculator.DoOperation(cleanNum1, cleanNum2, op);
                         if (double.IsNaN(result))
                         {
                             Console.WriteLine("This operation will result in a mathematical error.\n");
@@ -79,7 +82,7 @@ namespace CalculatorApp
                         Console.WriteLine("Yikes! An exception occurred trying to do math.\n - Details: " + e.Message);
                     }
                 }
-                Console.WriteLine("------------------------\n");
+                Console.WriteLine("----------------------------\n");
 
                 // Wait for the user to respond before closing
                 Console.WriteLine("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
