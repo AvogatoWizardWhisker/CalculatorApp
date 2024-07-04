@@ -59,7 +59,7 @@ namespace CalculatorApp
                 string? op = Console.ReadLine();
 
                 // Validate input is not num, and matches the pattern
-                if (op == null || !Regex.IsMatch(op, "[+|-|*|/]"))
+                if (op == null || !Regex.IsMatch(op, "[+|\\e-|*|/]"))
                 {
                     Console.WriteLine("Error: Unrecognized input");
                 }
