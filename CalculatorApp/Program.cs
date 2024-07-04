@@ -90,7 +90,8 @@ namespace CalculatorApp
                 if (Console.ReadLine() == "n")
                     endApp = true;
 
-                Console.WriteLine("\n");
+                //Console.WriteLine("\n");
+                Console.Clear();
             }
             return;
         }
