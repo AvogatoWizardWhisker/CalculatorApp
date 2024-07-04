@@ -17,5 +17,6 @@
   <li>Open the solution in Visual Studio.</ol>
   <li>Build and run the CalculatorApp project.</ol>
 </ul>
+<p>You can also use Visual Studio Code to run the project. Make sure you have the .NET SDK required to compile.</p>
 
 <p>Feel free to explore the code and enhance the app further!</p>
