@@ -1,7 +1,6 @@
 <h1>Console Calculator App</h1>
 
 <h2>Overview</h2>
-![image](https://github.com/AvogatoWizardWhisker/CalculatorApp/assets/89489853/9e60c4ee-97a4-4882-879f-6144302ebdaa)
 
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/89489853/345902456-7761a0f6-66fc-4c05-88c6-703c296cf2f5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240704%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240704T165517Z&X-Amz-Expires=300&X-Amz-Signature=20a71b950846863bb72f76916b0b027333b412caaa6edb37355dc0c5f1bc1e34&X-Amz-SignedHeaders=host&actor_id=89489853&key_id=0&repo_id=819641561">
 <p>This repository contains a simple console calculator app developed in C#. I created this project during my free time as part of my journey to learn programming.</p>
