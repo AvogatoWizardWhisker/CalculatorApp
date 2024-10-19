@@ -15,11 +15,9 @@
 
 ## Getting Started
 
-<ul>
-  <li>Clone this repository to your local machine.</ol>
-  <li>Open the solution in Visual Studio.</ol>
-  <li>Build and run the CalculatorApp project.</ol>
-</ul>
-<p>You can also use Visual Studio Code to run the project. Make sure you have the .NET SDK required to compile.</p>
+1. Clone this repository to your local machine.
+2. Open the solution in Visual Studio.
+3. Build and run the CalculatorApp project.
 
-<p>Feel free to explore the code and enhance the app further!</p>
+You can also use Visual Studio Code to run the project. Make sure you have the [.NET SDK](https://dotnet.microsoft.com/en-us/download) required to compile. Download and install the latest version of .NET SDK and follow the instructions.
+Feel free to explore the code and enhance the app further!
