@@ -4,7 +4,7 @@
 
 ![image](https://github.com/user-attachments/assets/e56368b5-bccf-46d2-ad3c-0e91fef3b7b0)
 
-[This repository contains a simple console calculator app developed in C#. I created this project during my free time as part of my journey to learn programming.](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-console?view=vs-2022)
+This repository contains a simple console calculator app developed in C#. I created this [project](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-console?view=vs-2022) during my free time as part of my journey to learn programming.
 ## Features
 
 - Basic arithmetic operations (addition, subtraction, multiplication, division)
